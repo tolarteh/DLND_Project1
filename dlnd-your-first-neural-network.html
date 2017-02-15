@@ -13532,7 +13532,7 @@ Best epochs: 5000, learning: 0.1, hidden: 30</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>After exploring parameters, 5000 epochs with learning_rate of 0.1 and 30 hidden nodes was too much. Manually override the parameters to {<strong>epochs:</strong> 2500, <strong>learning_rate:</strong> 0.01, <strong>hidden: </strong>15}</p>
+<p>After exploring parameters, 5000 epochs with learning_rate of 0.1 and 30 hidden nodes was too much. Manually override the parameters to {<strong>epochs:</strong> 2000, <strong>learning_rate:</strong> 0.01, <strong>hidden_nodes: </strong>15}</p>
 
 </div>
 </div>
@@ -16518,7 +16518,7 @@ height=272
 <h2 id="Thinking-about-your-results">Thinking about your results<a class="anchor-link" href="#Thinking-about-your-results">&#182;</a></h2><p>Answer these questions about your results. How well does the model predict the data? Where does it fail? Why does it fail where it does?</p>
 <blockquote><p><strong>Note:</strong> You can edit the text in this cell by double clicking on it. When you want to render the text, press control + enter</p>
 </blockquote>
-<h4 id="Your-answer-below">Your answer below<a class="anchor-link" href="#Your-answer-below">&#182;</a></h4><p>The model captures data oscillations, and in its peaks estimate pretty good. But cannot capture the magnitude of smaller oscillations at the end of the month. The MSE resulting from test data prediction is higher than training and validation MSE, but is not far, because I tried to have the less amount of hidden nodes, so parsimony in the model is as high as I could find.</p>
+<h4 id="Your-answer-below">Your answer below<a class="anchor-link" href="#Your-answer-below">&#182;</a></h4><p>The model captures data oscillations, and in its peaks estimate pretty good. But cannot capture the magnitude of smaller oscillations at the end of the month. The MSE resulting from test data prediction is higher than training and validation MSE, but is not far, showing a good generalization on the underlying process in data. I tried to have hidden nodes as low as possible, to increase model parsimony. Final parameters are {<strong>epochs:</strong> 2000, <strong>learning_rate:</strong> 0.01, <strong>hidden_nodes: </strong>15}.</p>
 
 </div>
 </div>
