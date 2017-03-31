@@ -1,6 +1,7 @@
 # DLND_Project1
-**DLND =** Deep Learning nano-degree
-DLND - Project 1: Your first neural network 
+### DLND - Project 1: Your first neural network 
+
+**DLND =** Udacity deep learning nano-degree
 
 Build a neural network (only using numpy) and use it to predict daily bike rental ridership.
 
